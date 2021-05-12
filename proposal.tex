@@ -1,0 +1,108 @@
+\documentclass[11pt]{article}
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\usepackage{float}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{titlesec}
+\titlespacing\section{1pt}{12pt plus 2pt minus 2pt}{1pt plus 2pt minus 2pt}
+\titlespacing\subsection{1pt}{12pt plus 2pt minus 2pt}{pt plus 2pt minus 2pt}
+%\titlespacing\subsubsection{5pt}{12pt plus 2pt minus 2pt}{1pt plus 2pt minus 2pt}
+%\usepackage{float}
+\usepackage[hidelinks]{hyperref}
+\geometry{margin=0.5in}
+%opening
+\titleformat*{\section}{\small\bfseries}
+\title{Genetic diversity, population structure and demography of \emph{Odontodactylus scyllarus}}
+\bibliographystyle{unsrt}
+\date{}
+\author{Ethan Holleman}
+\begin{document}
+\maketitle
+\thispagestyle{empty}
+
+
+Include a brief background on your organism, and the populations that you propose to study. Describe how you would (1) characterize genetic variation, (2) determine population substructure, and (3) infer demographic history among two or more subpopulations within your species. In addition, describe how you would identify loci that have been influenced by selection, and how you would distinguish differences due to selection from other processes
+
+\section{Background}
+
+\emph{Odontodactylus scyllarus}, or the Mantis shrimp are a unique group of carnivorous stomatopods that are believed to have diverged from the class Malacostraca around 340 million years ago \cite{VanDerWal2017}. Mantis shrimp are notable for both their unique mechanically driven raptorial smashing claws which are powerful enough to induce cavitation in the surrounding water \cite{Patek2004, Patek2005} and acutely sensitive visual system which is believed to be the most complex ever discovered in nature \cite{Cronin2014, Milius2012}. Due to their extraordinary physiology the biology of Mantis shrimp species has been the subject of significant study but comparatively few studies have focused on the genetic structure of Mantis shrimp populations and have focused on Asian Mantis shrimp species in the Yellow and East China Seas \cite{Yang2018}. Mantis shrimp are known to play an important role in marine ecosystems by acting as efficient predators of other crustaceans and oxygenating ocean sediments \cite{Antony2010}. 
+
+
+\begin{wrapfigure}{l}{0.35\textwidth}
+	\begin{center}
+		\includegraphics[width=0.30\textwidth]{images/sampling_locations.png}
+	\end{center}
+	\caption{Proposed \emph{Hemisquilla californiensis} collection locations shown as colored dots. Image adapted from \emph{Basch et al, 93}}
+\end{wrapfigure}
+
+Main goal is to resolve the genetic diversity of \emph{Hemisquilla californiensis} ranges from Santa Barba California to Bay of Panama 
+population mapping efforts preceded the advent of next-generation sequencing technologies
+
+In this effort we will pursue three specific aims. 
+
+
+\section*{Aim 1: Quantify genetic variation of the California Mantis shrimp}
+Hypothesis: \emph{Odontodactylus scyllarus} will show significant genetic variation between sampling locations.
+
+Locations,   number   of   samples   (N),   percent amplification  (%A),  useable  samples  (N*),  mean  allelicrichness   (AR),   expected   heterozygosity   (He),   observedheterozygosity   (Ho),   and   inbreeding   F-statistics   (FIS)based  on  16  microsatellite  loci  for  35  populations  ofO.mykissfrom the Klamath–Trinity River basin
+
+
+
+Use double-digest restriction site associated DNA sequencing (RAD-seq) \cite{Peterson2012}. Challenge will be the lack of reference genome for shrimp as non-model organism. Also utilize the a total mitochondrial genome of \emph{Squilloides leptosquilla} \cite{Kang2015}, a mantis shrimp species closely related to \emph{Odontodactylus scyllarus}. 
+
+Will rely on the closely related \emph{Litopenaeus vannamei},  Pacific white shrimp, genome \cite{Zhang2019}
+
+
+\section*{Aim 2: Evaluate sub-population structure within sampling locations}
+Mantis shrimp species are known to be mostly solitary creatures, rarely spending significant amounts of time outside of their sea floor burrows \cite{Mead2010}. This small range is expected to give rise to significant population sub-structure within the four sampling locations. 
+
+
+\begin{itemize}
+	\item Fixation Index: reduction in genetic diversity of sub populations due to differentiation among sub populations.
+	\begin{itemize}
+		\item Access the reduction of differentiation to compare specific sub-populations using pairwise comparison. 
+		\item How to define different sub populations? Blobs of areas / habitats
+		\item High pairwise Fst to gauge the distinctness of populations. Do something where defining subpopulations 
+		at greater and greater distances to determine how quickly Fst will drop off at different sampling sites. 
+	\end{itemize}
+	\item Another entry in the list
+\end{itemize}
+
+
+
+Expected heterozygotes Ht (total population was randomly mating)
+Collect genotype data from a single locus A/T SNP and collect
+adults 
+Determine alllele frequncies of locus interested in
+This is where would look at mean Fst (fixation index which is mean reduction in Hs (expected heterozygosity due to genetic differentation amoung subpopulations)).
+Fis (inbreeding coeffiecent reduction in Hi due to non-random mating within a subpopulations )
+Baysean subpopulation assignment 
+possibly admixture analysis here as well
+
+
+\section*{Aim 3: Determine demographic history of two subpopulations of these bugs}
+
+\begin{itemize}
+	\item How to tell demography vs selection?
+	\begin{itemize}
+		\item Wright-Fisher model predicts something. Neutral expectation. Constant size and no selection.
+		\item Selection
+		\begin{itemize}
+			\item Selective sweep
+			\item negative selection
+			\item balancing selection 
+			\item Any of these is occurring at specific loci that is under selection compared to a population (demographic level) change that should be observed genome wide because not specific to specific locus. 
+		\end{itemize}
+	\end{itemize}
+\end{itemize}
+
+
+\pagebreak
+
+\bibliography{refs}
+
+\end{document}
