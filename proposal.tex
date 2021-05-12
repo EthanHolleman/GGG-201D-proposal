@@ -16,16 +16,13 @@
 \geometry{margin=0.5in}
 %opening
 \titleformat*{\section}{\small\bfseries}
-\title{Genetic diversity, population structure and demography of \emph{Odontodactylus scyllarus}}
+\title{Investigating the genetic diversity, population structure and demography of Baja and Pacific \emph{Odontodactylus scyllarus}}
 \bibliographystyle{unsrt}
 \date{}
 \author{Ethan Holleman}
 \begin{document}
 \maketitle
 \thispagestyle{empty}
-
-
-Include a brief background on your organism, and the populations that you propose to study. Describe how you would (1) characterize genetic variation, (2) determine population substructure, and (3) infer demographic history among two or more subpopulations within your species. In addition, describe how you would identify loci that have been influenced by selection, and how you would distinguish differences due to selection from other processes
 
 \section{Background}
 
@@ -77,14 +74,24 @@ Mantis shrimp species are known to be mostly solitary creatures, rarely spending
 Expected heterozygotes Ht (total population was randomly mating)
 Collect genotype data from a single locus A/T SNP and collect
 adults 
-Determine alllele frequncies of locus interested in
-This is where would look at mean Fst (fixation index which is mean reduction in Hs (expected heterozygosity due to genetic differentation amoung subpopulations)).
-Fis (inbreeding coeffiecent reduction in Hi due to non-random mating within a subpopulations )
-Baysean subpopulation assignment 
+Determine allele frequencies of locus interested in
+This is where would look at mean Fst (fixation index which is mean reduction in Hs (expected heterozygotes due to genetic differentiation among sub-populations)).
+Fis (inbreeding coefficient reduction in Hi due to non-random mating within a sub-populations )
+Bayesian sub-population assignment 
 possibly admixture analysis here as well
 
 
-\section*{Aim 3: Determine demographic history of two subpopulations of these bugs}
+\section*{Aim 3: Determine demographic history of two sub-populations of these bugs}
+
+Hypothesis recent decline in mantis schrimp that coinsides with
+human activity. Mantis schrimp are sensitive to oceanic changes that effect them directly and habitat. 
+
+Evaluate the effect of selection on the observed site frequency spectrum gleaned from RAD-seq data collected as a part of aim 1 by evluating the allele frequency selection of each suitable locus compared to the allele frequency spectrum of all other suitable loci across the genome. 
+
+Would expect this to be demographic event though since fast maybe too extreme? This article suggests that 
+
+Ocean acidification would not effect mantis shrimp because did not really affect their weapons
+https://www.nature.com/articles/srep38637
 
 \begin{itemize}
 	\item How to tell demography vs selection?
@@ -97,8 +104,41 @@ possibly admixture analysis here as well
 			\item balancing selection 
 			\item Any of these is occurring at specific loci that is under selection compared to a population (demographic level) change that should be observed genome wide because not specific to specific locus. 
 		\end{itemize}
+		\item Historical demography of a population
+		\begin{itemize}
+			\item Step 1 determine allele frequency spectrum of a population by sampling individuals and determine what that is 
+			\item Neutral site freq spectrum has predictable decay but when looking at actual population and determine allele freq spectrum which might differ greatly from neutral expectation
+			\item Step 2 is build some demographic model
+			\begin{itemize}
+				\item Pop size on y and time on x axis
+				\item Shows how population size has changed over time
+				\item s is the strength of the decline (or more generally the change in population size)
+			\end{itemize}
+			\item Step 3 Determine the parameters that we are going to vary
+			\begin{itemize}
+				\item Might want to determine the
+					\item Strength of decline
+					\item Timing of decline
+					\item Rate of expansion
+					\item Some combination
+					\item These are the things that we are trying to determine. 
+			\end{itemize}
+			\item Step 4: Simulate data with different model parameter values.
+			\begin{itemize}
+				\item Get a simulated SFS sSFS
+				\item DO many many simulations where you change the variables of interest and compare simulated SFS to observed SFS to try and find the parameter valeus that produce a simulated SFS to the population we are interested in.
+				\item This is ABC approximate Bayesian computation
+				\item Requires defining a prior distribution that will define the parameter space
+				\item Simulate with the same amount of data that
+				we collected and get gene copies sequences (simulated) which allows for calculating the
+				simulated allele frequency spectrum 
+				 
+			\end{itemize}
+		\end{itemize}
 	\end{itemize}
 \end{itemize}
+
+5038141913
 
 
 \pagebreak
